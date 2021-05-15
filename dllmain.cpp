@@ -6,7 +6,7 @@ uintptr_t WINAPI MainThread(HMODULE hModule)
 {
 	Menu::Create();
 	Menu::Initialize();
-	while (1)
+	while (true)
 	{
 		Menu::Render();
 		if (GetAsyncKeyState(VK_DELETE) & 1)
@@ -15,9 +15,9 @@ uintptr_t WINAPI MainThread(HMODULE hModule)
 		}
 	}
 	Menu::Shutdown();
-
 	Sleep(1000);
 	FreeLibraryAndExitThread(hModule, 0);
+	return 0;
 }
 
 BOOL APIENTRY DllMain(
