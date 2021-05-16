@@ -30,7 +30,7 @@ void Menu::Initialize()
     GLFWmonitor* monitor = glfwGetPrimaryMonitor();
     if (!monitor)
     {
-        std::cout << "Failed to get monitor, defaults to 1080p" << std::endl;
+        std::cout << "Failed to get monitor size" << std::endl;
     }
     window = glfwCreateWindow(glfwGetVideoMode(monitor)->width, glfwGetVideoMode(monitor)->height, "Hello World", NULL, NULL);
 
