@@ -1,1 +1,1 @@
-# ImGui-OpenGL3-internal-template
+# ImGui-OpenGL3-external-template
